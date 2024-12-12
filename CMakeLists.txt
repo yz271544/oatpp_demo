@@ -3,7 +3,7 @@ project(oatpp_demo)
 
 set(CMAKE_CXX_STANDARD 20)
 
-set(SOURCE_FILES main.cpp handler.h)
+set(SOURCE_FILES src/main.cpp src/handler.h)
 
 # 查找 oatpp 依赖
 find_package(oatpp REQUIRED)

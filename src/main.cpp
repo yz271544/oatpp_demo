@@ -21,7 +21,7 @@ void run()
     oatpp::network::Server server(connectionProvider, connectionHandler);
 
     // 打印服务器端口
-    OATPP_LOGi("MyApp", "Server running on port %s", connectionProvider->getProperty("port").getData());
+    OATPP_LOGi("MyApp", "Server running on port {}", static_cast<const char*>(connectionProvider->getProperty("port").getData()));
 
     // 运行服务器
     server.run();
